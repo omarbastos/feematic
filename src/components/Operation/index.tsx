@@ -2,9 +2,10 @@ import React from 'react'
 
 interface Props {
   text: string
+  currency: string
 }
 
-const Operation = ({ text }: Props) => {
+const Operation = ({ text, currency }: Props) => {
   const regex = /[0-9]/g
   const textArr = [...text]
   return (
@@ -18,6 +19,7 @@ const Operation = ({ text }: Props) => {
           </span>
         )
       )}
+      {currency}
     </div>
   )
 }

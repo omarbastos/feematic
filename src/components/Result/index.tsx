@@ -2,15 +2,16 @@ import React from 'react'
 
 interface Props {
   text: number
+  currency: string
 }
 
-const Result = ({ text }: Props) => {
+const Result = ({ text, currency }: Props) => {
   const formatNumber = (value: number) => {
     return new Intl.NumberFormat('en-US').format(value)
   }
   return (
     <div className="my-2 text-right text-white font-bold text-5xl">
-      ={formatNumber(text)}
+      {text ? `=${formatNumber(text)} ${currency}` : ''}
     </div>
   )
 }

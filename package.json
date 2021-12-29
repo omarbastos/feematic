@@ -1,5 +1,5 @@
 {
-  "name": "reactjs-vite-tailwindcss-boilerplate",
+  "name": "feematic",
   "description": "This is a React + vite boilerplate to be used with Tailwindcss.",
   "version": "0.2.0",
   "private": true,
