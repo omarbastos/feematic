@@ -11,8 +11,8 @@ const Pad = ({ text, className, isActive, ...props }: Props) => {
     <div className={className}>
       <button
         {...props}
-        className={`rounded-2xl bg-gray-900 text-4xl text-cyan-500 w-full h-full grid place-items-center ${
-          isActive ? 'bg-cyan-500 text-white' : ''
+        className={`rounded-2xl  text-4xl bg-gray-900 text-cyan-500 w-full h-full grid place-items-center ${
+          isActive ? 'shadow-2xl shadow-cyan-500/50' : ''
         }`}
       >
         {text}

@@ -1,15 +1,15 @@
+import { Amount } from 'pages/Calculator'
 import React from 'react'
 
 interface Props {
-  text: string
-  currency: string
+  amount: Amount
 }
 
-const Operation = ({ text, currency }: Props) => {
+const Operation = ({ amount }: Props) => {
   const regex = /[0-9]/g
-  const textArr = [...text]
+  const textArr = [...amount.value]
   return (
-    <div className="text-right text-gray-300 font-light text-3xl">
+    <div className="text-right text-white font-bold text-5xl">
       {textArr.map((char, index) =>
         new RegExp(regex).test(char) ? (
           char
@@ -19,7 +19,7 @@ const Operation = ({ text, currency }: Props) => {
           </span>
         )
       )}
-      {currency}
+      {amount.currency}
     </div>
   )
 }
