@@ -38,13 +38,13 @@ const Calculator = () => {
   }
 
   return (
-    <div className="h-full w-full md:h-[80vh] md:w-96 md:rounded-3xl bg-[#303136] md:shadow-2xl md:shadow-cyan-500/50">
-      <div className="p-8 flex flex-col justify-between w-full h-full">
-        <div className="w-full h-1/3 flex flex-col items-end justify-center">
+    <div className="h-screen w-screen overflow-y-auto md:w-96 md:rounded-3xl bg-[#303136] md:shadow-2xl md:shadow-cyan-500/50">
+      <div className="p-8 flex flex-col justify-between w-full h-auto">
+        <div className="w-full h-[40vh] flex flex-col items-end justify-center">
           <Operation amount={amount}></Operation>
           <Result amount={amount}></Result>
         </div>
-        <div className="w-full h-2/3 grid grid-cols-4 gap-3">
+        <div className="w-full pb-12 h-[50vh] grid grid-cols-4 gap-3">
           {pads.map(({ text, className, color }) => (
             <Pad
               className={className}
