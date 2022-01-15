@@ -1,21 +1,27 @@
 import { Amount } from 'pages/Calculator'
 import React from 'react'
 import { formatMoney } from 'utils'
-import {
-  COP_TO_USD,
-  COP_TO_VEF,
-  currencies,
-  USD_TO_COP,
-  USD_TO_VEF,
-  VEF_TO_COP,
-  VEF_TO_USD
-} from 'utils/constants'
+import { currencies } from 'utils/constants'
 
 interface Props {
   amount: Amount
+  COP_TO_USD: number
+  COP_TO_VEF: number
+  USD_TO_COP: number
+  USD_TO_VEF: number
+  VEF_TO_COP: number
+  VEF_TO_USD: number
 }
 
-const Result = ({ amount }: Props) => {
+const Result = ({
+  USD_TO_COP,
+  USD_TO_VEF,
+  VEF_TO_COP,
+  VEF_TO_USD,
+  COP_TO_VEF,
+  COP_TO_USD,
+  amount
+}: Props) => {
   const getExchangedAmount = (value: number, currency: string) => {
     switch (currency) {
       case '🇺🇸':
@@ -41,7 +47,7 @@ const Result = ({ amount }: Props) => {
     }
   }
   return (
-    <div className="my-2 text-right text-gray-300 font-light text-3xl flex flex-col">
+    <div className="flex flex-col my-2 text-3xl font-light text-right text-gray-300">
       {getExchangedAmount(+amount.value, amount.currency).map(
         (exchangedAmount, index) => (
           <span key={index}>{exchangedAmount}</span>

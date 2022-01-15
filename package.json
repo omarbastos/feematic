@@ -1,16 +1,16 @@
 {
   "name": "feematic",
-  "description": "This is a React + vite boilerplate to be used with Tailwindcss.",
-  "version": "0.2.0",
+  "description": "This is a React + vite currency calculator.",
+  "version": "1.1.0",
   "private": true,
   "author": {
-    "name": "João Paulo Moraes",
-    "email": "joaopaulomoraes@outlook.com",
-    "url": "https://github.com/joaopaulomoraes"
+    "name": "Omar Hernandez",
+    "email": "omarsro@gmail.com",
+    "url": "https://github.com/omarbastos"
   },
   "bugs": {
-    "url": "https://github.com/joaopaulomoraes/reactjs-vite-tailwindcss-boilerplate/issues",
-    "email": "joaopaulomoraes@outlook.com"
+    "url": "https://github.com/omarbastos/feematic",
+    "email": "omarsro@gmail.com"
   },
   "scripts": {
     "dev": "vite",
