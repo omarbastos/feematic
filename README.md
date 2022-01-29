@@ -1,6 +1,10 @@
-# React Tailwindcss Boilerplate build with Vite
+# Feematic
 
-This is a [ReactJS](https://reactjs.org) + [Vite](https://vitejs.dev) boilerplate to be used with [Tailwindcss](https://tailwindcss.com).
+## Currency Calc
+This small calc let you to convert between COP🇨🇴,USD🇺🇸 and VES🇻🇪
+
+- VES is working with BCV Rate
+- COP is working with TMR Rate
 
 ## What is inside?
 
