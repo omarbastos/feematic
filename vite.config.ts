@@ -19,6 +19,8 @@ export default defineConfig({
         name: 'Feematic',
         short_name: 'Feematic',
         description: 'Exchange Rate Calculator',
+        orientation: 'portrait',
+        display: 'standalone',
         theme_color: '#ffffff',
         icons: [
           {
