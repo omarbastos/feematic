@@ -31,9 +31,26 @@
     />
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css"
+    />
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"
+    ></script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: 'D5EUTUYOT8',
+        apiKey: '<YOUR_ALGOLIA_SEARCH_API_KEY>',
+        siteId: 'fa47f108-245e-438c-9a34-2e5c076f8b8c',
+        branch: 'main',
+        selector: 'div#search'
+      })
+    </script>
   </body>
 </html>
