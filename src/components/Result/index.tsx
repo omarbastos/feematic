@@ -1,48 +1,36 @@
 import { Amount } from 'pages/Calculator'
-import React from 'react'
 import { formatMoney } from 'utils'
 import { currencies } from 'utils/constants'
 
 interface Props {
   amount: Amount
-  COP_TO_USD: number
-  COP_TO_VEF: number
-  USD_TO_COP: number
-  USD_TO_VEF: number
-  VEF_TO_COP: number
-  VEF_TO_USD: number
+  cop: number
+  ves: number
 }
 
-const Result = ({
-  USD_TO_COP,
-  USD_TO_VEF,
-  VEF_TO_COP,
-  VEF_TO_USD,
-  COP_TO_VEF,
-  COP_TO_USD,
-  amount
-}: Props) => {
+const Result = ({ cop, ves, amount }: Props) => {
   const getExchangedAmount = (value: number, currency: string) => {
+    const currencySelector = {}
     switch (currency) {
-      case '🇺🇸':
+      case currencies.USD:
         return [
-          `${formatMoney(value * USD_TO_COP)} ${currencies.COP}`,
-          `${formatMoney(value * USD_TO_VEF)} ${currencies.VEF}`
+          `${formatMoney(value * cop)} ${currencies.COP}`,
+          `${formatMoney(value / (cop / ves))} ${currencies.VES}`
         ]
-      case '🇨🇴':
+      case currencies.COP:
         return [
-          `${formatMoney(value * COP_TO_USD)} ${currencies.USD}`,
-          `${formatMoney(value * COP_TO_VEF)} ${currencies.VEF}`
+          `${formatMoney(value / cop)} ${currencies.USD}`,
+          `${formatMoney(value / ves)} ${currencies.VES}`
         ]
-      case '🇻🇪':
+      case currencies.VES:
         return [
-          `${formatMoney(value * VEF_TO_COP)} ${currencies.COP}`,
-          `${formatMoney(value * VEF_TO_USD)} ${currencies.USD}`
+          `${formatMoney(value * (cop / ves))} ${currencies.COP}`,
+          `${formatMoney(value / ves)} ${currencies.USD}`
         ]
       default:
         return [
-          `${formatMoney(value * USD_TO_COP)} ${currencies.COP}`,
-          `${formatMoney(value * USD_TO_VEF)} ${currencies.VEF}`
+          `${formatMoney(value * cop)} ${currencies.COP}`,
+          `${formatMoney(value * ves)} ${currencies.VES}`
         ]
     }
   }
