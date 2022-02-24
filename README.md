@@ -1,5 +1,5 @@
 # Feematic
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fa47f108-245e-438c-9a34-2e5c076f8b8c/deploy-status)](https://app.netlify.com/sites/feematic/deploys)
 ## Currency Calc
 This small calc let you to convert between COP🇨🇴,USD🇺🇸 and VES🇻🇪
 
