@@ -1,7 +1,7 @@
 import React, { ButtonHTMLAttributes } from 'react'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  text: string
+  text: string | React.ReactNode
   className?: string
   isActive: boolean
 }

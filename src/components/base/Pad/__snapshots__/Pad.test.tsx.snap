@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pad Test Pad Component should render correctly 1`] = `
+<div>
+  <div
+    class=""
+  >
+    <button
+      class="rounded-2xl  text-4xl bg-gray-900 text-cyan-500 w-full h-full grid place-items-center "
+    >
+      1
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result Test Result Component should render correctly 1`] = `
+<div>
+  <div
+    class="flex flex-col my-2 text-3xl font-light text-right text-gray-300"
+  >
+    <span>
+      3.800,00 🇨🇴
+    </span>
+    <span>
+      0,00 🇻🇪
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Result Test Result Component unexpected currency 1`] = `
+<div>
+  <div
+    class="flex flex-col my-2 text-3xl font-light text-right text-gray-300"
+  >
+    <span>
+      3.800,00 🇨🇴
+    </span>
+    <span>
+      4,50 🇻🇪
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Result Test Result Component with currency COP 1`] = `
+<div>
+  <div
+    class="flex flex-col my-2 text-3xl font-light text-right text-gray-300"
+  >
+    <span>
+      0,00 🇺🇸
+    </span>
+    <span>
+      0,22 🇻🇪
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Result Test Result Component with currency VES 1`] = `
+<div>
+  <div
+    class="flex flex-col my-2 text-3xl font-light text-right text-gray-300"
+  >
+    <span>
+      844,44 🇨🇴
+    </span>
+    <span>
+      0,22 🇺🇸
+    </span>
+  </div>
+</div>
+`;
