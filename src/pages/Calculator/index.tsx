@@ -46,9 +46,10 @@ const Calculator = ({ cop, ves }: { cop: number; ves: number }) => {
           <Result cop={cop} ves={ves} amount={amount}></Result>
         </div>
         <div className="grid grid-cols-4 gap-3 pb-12 w-full h-[50vh]">
-          {pads.map(({ text, className, color }) => (
+          {pads.map(({ id, text, className, color }) => (
             <Pad
-              key={nanoid()}
+              key={id}
+              data-testid={text}
               className={className}
               onClick={() => onPressPad(text)}
               text={text}

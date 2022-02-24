@@ -9,7 +9,6 @@ function App() {
 
   const fetchRates = async () => {
     const { cop, ves } = await getRates()
-
     setCop(+cop)
     setVes(+ves)
   }

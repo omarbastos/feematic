@@ -10,6 +10,7 @@ interface Props {
 
 const Result = ({ cop, ves, amount }: Props) => {
   const getExchangedAmount = (value: number, currency: string) => {
+    const currencySelector = {}
     switch (currency) {
       case currencies.USD:
         return [

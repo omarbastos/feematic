@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Operation Test Operation Component should render correctly 1`] = `
+<div>
+  <div
+    class="text-5xl font-bold text-right text-white"
+  >
+    1,00
+    🇺🇸
+  </div>
+</div>
+`;
