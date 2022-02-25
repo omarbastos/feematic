@@ -3,12 +3,12 @@ export enum ActionsPad {
   DECIMAL = '.'
 }
 export const pads = [
-  { id: 1, text: '🇨🇴', className: '', color: 'cyan-200' },
-  { id: 2, text: '🇺🇸', className: '', color: 'gray-100' },
-  { id: 3, text: '🇻🇪', className: 'row-span-2' },
+  { id: 1, text: '🇨🇴', className: 'col-span-2', color: 'cyan-200' },
+  { id: 2, text: '🇺🇸', className: 'col-span-2', color: 'gray-100' },
   { id: 4, text: '7', className: '' },
   { id: 5, text: '8', className: '' },
   { id: 6, text: '9', className: '' },
+  { id: 3, text: '🇻🇪', className: 'row-span-2' },
   { id: 7, text: '4', className: '' },
   { id: 8, text: '5', className: '' },
   { id: 9, text: '6', className: '' },

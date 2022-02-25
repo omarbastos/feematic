@@ -9,8 +9,6 @@ export default defineConfig({
     react(),
     tsconfigPaths(),
     VitePWA({
-<<<<<<< Updated upstream
-=======
       includeAssets: [
         'favicon.svg',
         'favicon.ico',
@@ -42,7 +40,6 @@ export default defineConfig({
           }
         ]
       },
->>>>>>> Stashed changes
       registerType: 'autoUpdate',
       workbox: {
         cleanupOutdatedCaches: false,
