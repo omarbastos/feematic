@@ -9,7 +9,7 @@ exports[`Result Test Result Component should render correctly 1`] = `
       3.800,00 🇨🇴
     </span>
     <span>
-      0,00 🇻🇪
+      4,50 🇻🇪
     </span>
   </div>
 </div>
@@ -39,7 +39,7 @@ exports[`Result Test Result Component with currency COP 1`] = `
       0,00 🇺🇸
     </span>
     <span>
-      0,22 🇻🇪
+      0,00 🇻🇪
     </span>
   </div>
 </div>
