@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react'
-import { currencies } from 'utils/constants'
+import { currencies } from 'utils/constants/constants'
 import Result from '.'
 
 describe('Result Test', () => {

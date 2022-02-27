@@ -1,26 +1,31 @@
 import { Amount } from 'pages/Calculator'
+import { useContext } from 'react'
 import { formatMoney } from 'utils'
-import { currencies } from 'utils/constants'
+import { COP_DEFAULT, currencies, VES_DEFAULT } from 'utils/constants/constants'
+import { RatesContext } from 'utils/contexts/RatesContext'
 
 interface Props {
   amount: Amount
-  cop: number
-  ves: number
 }
 
-const Result = ({ cop, ves, amount }: Props) => {
+const Result = ({ amount }: Props) => {
+  const { cop, ves } = useContext(RatesContext)
   const getExchangedAmount = (value: number, currency: string) => {
-    const currencySelector = {}
+    if (!cop || !ves)
+      return [
+        `${formatMoney(value * COP_DEFAULT)} ${currencies.COP}`,
+        `${formatMoney(value / (COP_DEFAULT / VES_DEFAULT))} ${currencies.VES}`
+      ]
     switch (currency) {
       case currencies.USD:
         return [
           `${formatMoney(value * cop)} ${currencies.COP}`,
-          `${formatMoney(value / (cop / ves))} ${currencies.VES}`
+          `${formatMoney(value * ves)} ${currencies.VES}`
         ]
       case currencies.COP:
         return [
           `${formatMoney(value / cop)} ${currencies.USD}`,
-          `${formatMoney(value / ves)} ${currencies.VES}`
+          `${formatMoney(value / (cop / ves))} ${currencies.VES}`
         ]
       case currencies.VES:
         return [

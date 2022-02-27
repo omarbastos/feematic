@@ -3,20 +3,24 @@
 exports[`App Test App Component should render correctly 1`] = `
 <div>
   <div
-    class="space-x-2 justify-center items-center flex h-screen"
+    class="flex relative justify-center items-center min-h-screen bg-[#DAF0FF] min-w-screen"
   >
     <div
-      class="flex"
+      class="flex justify-center items-center space-x-2 w-full h-full"
     >
       <div
-        class="h-2.5 w-2.5 bg-cyan-900 rounded-full mr-1 animate-bounce"
-      />
-      <div
-        class="h-2.5 w-2.5 bg-cyan-900 rounded-full mr-1 animate-bounce200"
-      />
-      <div
-        class="h-2.5 w-2.5 bg-cyan-900 rounded-full animate-bounce400"
-      />
+        class="flex"
+      >
+        <div
+          class="h-2.5 w-2.5 bg-cyan-900 rounded-full mr-1 animate-bounce"
+        />
+        <div
+          class="h-2.5 w-2.5 bg-cyan-900 rounded-full mr-1 animate-bounce200"
+        />
+        <div
+          class="h-2.5 w-2.5 bg-cyan-900 rounded-full animate-bounce400"
+        />
+      </div>
     </div>
   </div>
 </div>

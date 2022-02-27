@@ -1,5 +1,6 @@
 export enum ActionsPad {
-  CLEAR = '🚫',
+  CLEAR = 'AC',
+  C = 'C',
   DECIMAL = '.'
 }
 export const pads = [
@@ -15,9 +16,10 @@ export const pads = [
   { id: 10, text: '1', className: '' },
   { id: 11, text: '2', className: '' },
   { id: 12, text: '3', className: '' },
-  { id: 13, text: ActionsPad.CLEAR, className: 'row-span-2' },
+  { id: 13, text: ActionsPad.C, className: '' },
   { id: 14, text: '0', className: 'col-span-2' },
-  { id: 15, text: ActionsPad.DECIMAL, className: '' }
+  { id: 15, text: ActionsPad.DECIMAL, className: '' },
+  { id: 13, text: ActionsPad.CLEAR, className: '' }
 ]
 
 export type CURRENCIES = '🇨🇴' | '🇺🇸' | '🇻🇪'
@@ -28,3 +30,6 @@ const currencies = {
 }
 export const CURRENCIES_ARRAY = [currencies.USD, currencies.COP, currencies.VES]
 export { currencies }
+
+export const COP_DEFAULT = 3800
+export const VES_DEFAULT = 4.5

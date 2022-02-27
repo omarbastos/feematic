@@ -9,3 +9,6 @@ export function formatMoney(value: number): string {
   })
   return formatter.format(value)
 }
+export function getFixed(value: number): number {
+  return parseFloat(value.toFixed(2))
+}
