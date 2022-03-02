@@ -81,16 +81,16 @@ export default function MyModal() {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <div className="inline-block overflow-hidden p-6 my-8 w-full max-w-md text-left align-middle bg-white rounded-2xl shadow-xl transition-all transform">
+              <div className="inline-block overflow-hidden p-6 my-8 w-full max-w-md text-left align-middle bg-gray-900 rounded-2xl shadow-xl transition-all transform">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-medium leading-6 text-gray-900"
+                  className="text-lg font-medium leading-6 text-gray-100"
                 >
                   Configuración
                 </Dialog.Title>
 
                 <div className="mt-2">
-                  <div className="flex justify-between my-4 text-sm text-gray-800">
+                  <div className="flex justify-between my-4 text-sm text-gray-200">
                     <span>Habilitar Tasa personalizada</span>
                     <Switch
                       checked={customRates}
@@ -143,7 +143,7 @@ export default function MyModal() {
                 <div className="flex justify-center items-center mt-4">
                   <button
                     type="button"
-                    className="inline-flex justify-center py-2 px-4 w-full text-sm font-medium text-red-900 bg-red-100 hover:bg-red-200 rounded-md border border-transparent focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus:outline-none"
+                    className="inline-flex justify-center py-2 px-4 w-full text-sm font-medium text-red-900 bg-red-300 hover:bg-red-200 rounded-md border border-transparent focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:ring-offset-2 focus:outline-none"
                     onClick={closeModal}
                   >
                     Cerrar

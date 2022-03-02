@@ -7,7 +7,7 @@ interface InputProps extends React.HTMLProps<HTMLInputElement> {
 const Input = ({ label, ...rest }: InputProps) => {
   return (
     <div className="relative py-4">
-      <label htmlFor="email" className="text-sm font-semibold text-gray-700">
+      <label htmlFor="email" className="text-sm font-semibold text-gray-200">
         {label}
       </label>
       <input
