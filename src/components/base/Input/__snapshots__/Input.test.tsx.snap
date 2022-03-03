@@ -6,7 +6,7 @@ exports[`Input Test Input Component should render correctly 1`] = `
     class="relative py-4"
   >
     <label
-      class="text-sm font-semibold text-gray-700"
+      class="text-sm font-semibold text-gray-200"
       for="email"
     >
       test
